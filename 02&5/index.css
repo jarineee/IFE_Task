@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+
+/* 初始化 */
+h1,h2,h3,h4,h5,h6,body,span {
+    margin: 0;
+    padding: 0;
+    font-family: "microsoft yahei", "黑体","sans-serif";
+}
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+body {
+    background-color: #eeeeee;
+}
+article, aside {
+    box-shadow: 1px 1px 1px #999;
+}
+
+
+/* 头部开始啦 */
+header {
+    height: ;
+}
+header,footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: #333333;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+header h1 {
+    float: left;
+    line-height: 50px;
+}
+header ul {
+    float: right;
+    line-height: 50px;
+    list-style: disc;
+    margin: 0;
+    font-size: 0.8em;
+}
+header ul li {
+    float: left;
+    margin: 0 10px;
+    font-family: "microsoft yahei", "黑体", "sans-serif";
+    color: #000;
+}
+header ul li a:link {
+    color: #fff;
+}
+header ul li a:visited {
+    color: #999;
+}
+
+
+
+/* section部分 */
+section {
+    margin-right: 400px;
+}
+section article {
+}
+section article,aside {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #dedede;
+}
+section article h2:first-child{
+    font-size: 1.3em;
+    margin: 20px 0;
+    font-weight: 600;
+}
+section article h2+h2 {
+    font-size: 1em;
+    color: #6A6A6A;
+    margin: 10px 0;
+}
+section article span, article time {
+    font-size: .8em;
+    color: #6A6A6A;
+    margin: 10px 0;
+}
+section article p {
+    text-indent: 2em;
+    line-height: 25px;
+}
+section article ul {
+    list-style: none;
+}
+article > img {
+    max-width: 100%;
+}
+article .picbox {
+    border: 1px solid #aaaaaa;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+article .picbox p {
+    text-indent: 0;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0;
+}
+article .picbox img {
+    width: 100px;
+}
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 50px;
+    font-size: 0.8em;
+    color: #333333;
+    line-height: 20px;
+}
+article table th {
+    background-color: #333333;
+    color: #fff;
+    border: 1px solid #dedede;
+}
+
+article table tr:last-child {
+    background-color: #dedede;
+    font-weight: 700;
+}
+article table a:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* 侧边栏开始 */
+aside {
+    float: right;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 380px;
+}
+aside h2 {
+    font-size: 1.0em;
+    border-left: 3px solid #dedede;
+    padding: 10px;
+}
+fieldset {
+    border: 0;
+    font-size: 0.8em;
+    line-height: 40px;
+}
+fieldset span {
+    float: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+span.tips {
+    padding-left: 110px;
+    width: auto;
+    color: #999;
+}
+input {
+    font-size: 1em;
+    font-family: '黑体', 'sans-serif';
+}
+textarea {
+    font-size: 1.2em;
+    font-family: '黑体', 'sans-serif';
+    width: 200px;
+}
+input[type="submit"] {
+    width: 100%;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #0c61a4;
+    font-size: 1.5em;
+    border-radius: 10px;
+    font-family: "黑体","sans-serif";
+}
+
+
+/* 底部开始 */
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+    font-family: '黑体', 'sans-serif';
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>IFE task 04</title>
+    </head>
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+    	#gray-elem {
+    		width: 400px;
+    		height: 200px;
+    		background-color: #ccc;
+    		overflow: hidden;
+    		position: absolute;
+    		left: 50%;
+    		margin-left: -200px;
+    		top: 50%;
+    		margin-top: -100px;
+
+    		/* position: fixed;
+    		top: 50%;
+    		margin-top: -100px;
+    		left: 50%;
+    		margin-left: -200px; */
+    	}
+    	.circle {
+    		width: 100px;
+    		height: 100px;
+    		background-color: #fc0;
+    		border-radius: 50%;
+    		position: absolute;
+    	}
+    	.circle:first-child {
+			top: -50px;
+			left: -50px;
+    	}
+    	.circle:last-child {
+    		bottom: -50px;
+    		right: -50px;
+    	}
+    </style>
+    <body>
+    <div id="gray-elem">
+    	<div class="circle "></div>
+    	<div class="circle"></div>
+    </div>
+    </body>
+</html>

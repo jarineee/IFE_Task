@@ -1,0 +1,69 @@
+/*
+* @Author: VicyE
+* @Date:   2017-07-09 14:27:34
+* @Last Modified by:   VicyE
+* @Last Modified time: 2017-07-10 10:24:02
+*/
+
+
+/* 初始化 */
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'SimHei', 'microsoft yahei', 'sans-serif';
+	font-size: 14px;
+}
+
+/* 公共类 */
+#teaminfo, .avatar, #tlogo, #memblogo, #tintro {
+	border: 1px #999 solid;
+	background-color: #fff;
+}
+
+/* teaminfo部分 */
+#teaminfo {
+	background-color: #eee;
+	margin: 20px;
+	min-height: 430px;
+	min-width: 500px;
+	position: relative;
+	padding: 20px 160px 20px 240px;
+}
+
+/* 团队logo部分 */
+#tlogo {
+	width: 160px;
+	padding: 20px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.avatar {
+	width: 80px;
+	height: 80px;
+	background-color: #ddd;
+	overflow: hidden;
+}
+#tname {
+	width: 60px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+/* 个人logo部分 */
+#memblogo {
+	padding: 20px;
+	width: 80px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.avatar + .avatar {
+	margin-top: 20px;
+}
+
+/* 团队介绍部分 */
+#tintro {
+	padding: 20px;
+}
