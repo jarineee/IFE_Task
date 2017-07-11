@@ -1,0 +1,436 @@
+
+
+/* 初始化 */
+body {
+	height: 1386px;
+	width: 980px;
+	background-color: #fc0;
+	margin: 0 auto;
+}
+
+p, ul, ol, li, div, section, header, footer, span, h2, h1, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+ul, ol {
+	list-style: none;
+}
+i {
+	display: block;
+	position: relative;
+}
+/* 公共类 */
+.w {
+	width: 892px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.wrap{
+	height: 1386px;
+	width: 980px;
+	background-color: #fff;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/* 报纸的页眉 */
+header{
+	font-family: "SimHei","sans-serif";
+}
+header > .w {
+	border-bottom: 2px solid #938e8c;
+	margin-bottom: 35px;
+}
+header p {
+	font-size: 12px;
+	color: #fff;
+	display: inline-block;
+	width: 110px;
+	height: 61px;
+	background-color: #d45d5c;
+	padding: 42px 0 5px 5px;
+	box-sizing: border-box;
+} 
+header time {
+	float: right;
+	padding-top: 42px;
+	color:#d45d5c;
+	font-size: 12px;
+}
+
+/* section ab_tech 开始*/
+#ab_tech {
+	margin-bottom: 50px;
+}
+#ab_tech .picbox {
+	width: 641px;
+	height: 301px;
+	position: absolute;
+}
+.msk_g, .msk_r {
+	height: 301px;
+	width: 191px;
+	position: absolute;
+	top: 0;
+
+}
+.msk_r {
+	background-color: rgba(204, 118 , 128, .5);
+	right: 1px;
+}
+.msk_g {
+	background-color: rgba(66, 140 , 89, .5);
+	left: 0;
+
+}
+#a_tit {
+	height: 301px;
+	width: 203px;
+	border-top: 2px solid #cc8091;
+	float: right;
+	font-family: 'Microsoft YaHei', 'sans-serif';
+	box-sizing: border-box;
+	position: relative;
+}
+#a_tit > p:nth-of-type(1) {
+	font-size: 12px;
+	color: #676767;
+	font-family: 'SimKai', 'sans-serif';
+	line-height: 12px;
+	padding-top: 5px;
+}
+.underline > p {
+	color: #000;
+	border-bottom: #000 2px solid;
+	display: inline-block;
+	line-height: 20px;
+	padding-top: 10px;
+}
+.underline > p span {
+	font-size: 28px;
+}
+#sev {
+	font-size: 116px;
+	color: #75b86b;
+	font-style: italic;
+	text-indent: -18px;
+	margin-top: -5px;
+}
+#css {
+	height: 55px;
+	position: absolute;
+	line-height: 55px;
+	bottom: 0;
+}
+#thr {
+	font-size: 55px;
+	color: #cc8091;
+	padding-right: 5px;
+	display: inline-block;
+}
+#css p {
+	font-size: 21px;
+	line-height: 21px;
+	padding: 0 0 5px 10px;
+	color: #cc8091;
+	position: absolute;
+	bottom: 12px;
+	left: 78px;
+}
+#css span{
+	font-size: 12px;
+	color: #dedede;
+}
+
+/* section a 的 article排版 */
+#ab_tech .articles {
+	height: 200px;
+	width: 641px;
+	padding-top: 331px;
+}
+.articles article {
+	vertical-align: top;
+	font-size: 12px;
+	float: left;
+}
+.articles article + article {
+	padding-left: 28px;
+}
+.articles article h3 {
+	margin: 10px 0;
+	font-size: 16px;
+	text-decoration: underline;
+	font-family: 'Microsoft YaHei', 'sans-serif';
+}
+.articles article {
+	font-family: 'Microsoft YaHei', 'sans-serif';
+}
+.articles article p {
+	margin-bottom: 8px;
+}
+#what {
+	width: 228px;
+	color: #767777;
+	font-family: 'SimSun', 'sans-serif';
+}
+#what h3 {color: #418c59;}
+
+#when {width: 205px;}
+#when p {
+	color: #231815;
+	opacity: 0.7;
+}
+#when h3 {color: #d2994f;}
+
+#how {width: 152px;}
+#how p, #how ul {
+	color: #231815;
+	opacity: 0.7;
+}
+#how ul {
+	padding: 8px 0;
+}
+#how ul li{
+	font-family: 'Microsoft YaHei', 'sans-serif';
+	text-indent: 4px;
+	margin: 8px 0;
+}
+#how ul span+span {
+	color: #cd4a48;
+	font-style: italic;
+}
+#how h3 {color:#cc7680;}
+
+
+/* section tech_f开始 */
+#tech_f {}
+#tech_f > .w {}
+
+/* 左边部分 */
+#l_article {
+	width: 415px;
+	height: 618px;
+	padding-right: 19px;
+	font-size: 12px;
+	float: left;
+}
+#l_article p {
+	text-indent: 2em;
+	color: #767777;
+	font-family: 'SimSun', 'sans-serif';
+	line-height: 16px;
+}
+#l_article p:nth-of-type(1){text-indent: 0;}
+
+#l_article p:nth-of-type(1):first-letter {
+	float: left;
+	font-size: 70px;
+	font-family: 'Microsoft YaHei', 'sans-serif';
+	color: #f5e327;
+	line-height: 70px;
+	margin: 0 6px 3px 0;
+}
+#l_article img {
+	float: right;
+	margin: 17px 0 10px 17px;
+	width: 166px;
+	height: 288px;
+}
+#l_tit {
+	font-family: 'SimHei', 'sans-serif';
+	font-weight: bold;
+	border-bottom: 2px #11456b solid;
+	padding: 8px 0;
+	margin-bottom: 20px ;
+}
+#l_tit h2 {
+	font-size: 42px;
+	color: #11456b;
+	padding: 8px 0;
+	line-height: 42px;
+}
+#l_tit h3 {
+	font-size: 33px;
+	color: #11456b;
+}
+#l_tit h2 span {
+	font-size: 72px;
+	color: #f5e327;
+	font-style: italic;
+	padding-right: 30px;
+}
+
+/* 右边部分 */
+#r_article {
+	float: right;
+	width: 458px;
+}
+#r_article .picbox {
+	position: relative;
+	width: 458px;
+	height: 257px;
+}
+#r_article .picbox img {
+	width: 100%;
+}
+#r_article .title {
+	position: absolute;
+	bottom: 0;
+	height: 61px;
+	background-color: rgba(0,0,0,.5);
+	width: 458px;
+	padding: 8px 0;
+	box-sizing: border-box;
+}
+#r_article .title p {
+	margin-left: 40px;
+	border-left: 3px #72b16a solid;
+	height: 44px;
+	font-size: 22px;
+	color: #fff;
+	font-family: 'Microsoft YaHei', 'sans-serif';
+	line-height: 44px;
+	padding-left: 10px;
+}
+#r_article .title p span {
+	display: inline-block;
+	font-size: 12px;
+	font-style: italic;
+	color: #72b16a;
+	text-indent: 0.4em;
+	line-height: 12px;
+	vertical-align: sub;
+}
+#r_tit{
+	background-color: #eeeed6;
+	width: 459px;
+	height: 318px;
+	margin-top: 30px;
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+} 
+#r_tit ul li {
+	padding: 10px 0;
+	font-family: 'SimSun', 'sans-serif';
+	font-size: 16px;
+	color: #5a5b5b;
+}
+#r_tit ul li::before {
+	content: '';
+	border: 4px solid rgba(0,0,0,0);
+	border-bottom: 8px #13446f solid;
+	display: inline-block;
+	margin: -8px 5px 0 5px;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+#r_tit ul li span+span {
+	font-size: 12px;
+	font-style: italic;
+	float: right;
+	line-height: 18px;
+}
+
+#r_tit .redb {
+	height: 160px;
+	width: 260px;
+	background-color: #d55d5c;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5px;
+	padding-top: 37px;
+	box-sizing: border-box;
+}
+#r_tit .redb p:nth-of-type(1) {
+	font-size: 110px;
+	line-height: 86px;
+	color: #fff;
+	font-family: 'Microsoft YaHei', 'sans-serif';
+	display: inline-block;
+	border-right: 2px solid #fff;
+	height: 86px;
+	padding: 0 5px;
+	margin-right: 10px;
+}
+#r_tit .redb p span {
+	display: inline-block;
+	width: 140px;
+	font-size: 12px;
+	line-height: 12px;
+	font-family: 'SimHei', 'sans-serif';
+}
+#r_tit .redb p:nth-of-type(2) {
+	position: absolute;
+	bottom: 37px;
+	left: 90px;
+	font-family: 'SimHei','sans-serif';
+	font-style: italic;
+	font-size: 21px;
+	line-height: 26px;
+}
+#r_tit .quotb {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 160px;
+	width: 198px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: 'SimHei','sans-serif';
+	color: #5a5b5b;
+	line-height: 16px;
+	font-style: italic;
+	padding: 20px 20px 20px 15px;
+}
+
+#r_tit .quotb i:first-child, #r_tit .quotb i:last-child {
+	width: 30px;
+	height: 16px;
+}
+#r_tit .quotb i:first-child {
+	float: left;
+	margin-right: 10px;
+}
+#r_tit .quotb i:last-child {
+	float: right;
+	margin-left: 10px;
+}
+#r_tit .quotb i:first-child::before, #r_tit .quotb i:last-child::before {
+	font-size: 72px;
+	color: #d45d5c;
+	font-style: normal;
+	position: absolute;
+}
+#r_tit .quotb i:first-child::before {
+	content: '“';
+	top: 18px;
+	left: -38px;
+}
+#r_tit .quotb i:last-child::before {
+	content: '”';
+	top: 30px;
+	left: -3px;
+}
+
+/* footer开始 */
+#footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 980px;
+}
+#footer > .w {
+	border-top: #938e8c solid 1px;
+}
+#footer p {
+	height: 58px;
+	float: right;
+	color: #d45d5c;
+	font-family: 'SimHei', 'sans-serif';
+	font-size: 12px;
+}
