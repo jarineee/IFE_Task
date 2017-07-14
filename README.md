@@ -6,4 +6,4 @@
 - 任务四：定位和居中问题 预览：https://jarineee.github.io/IFE_Task/04/
 - 任务五：HTML与CSS编码（见第二条）
 - 任务六：通过HTML及CSS模拟报纸排版 预览： https://jarineee.github.io/IFE_Task/06/
-- 任务六：实现常见的技术产品官网的页面架构及样式布局 预览：  https://jarineee.github.io/IFE_Task/07/
+- 任务七：实现常见的技术产品官网的页面架构及样式布局 预览：  https://jarineee.github.io/IFE_Task/07/
