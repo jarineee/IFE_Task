@@ -1,0 +1,83 @@
+
+/* @import url('./style-lg.css') screen; */
+/* @import url('./style/style-lg.css') screen; 
+		url 应该填写相对于当前style.css的路径*/
+
+
+
+			/* 基本样式 */
+body {
+	background-color: aquamarine;
+}
+.row {
+	padding: 10px;
+	background-color: #fff;
+}
+div.check{
+	background-color: green;
+	height: 50px;
+}
+			/* 仿照bootstrap，用col-sz-n类做样式 */
+
+/* [class^='col-'] { background-color: blueviolet; }
+ css属性选择器class^=仅对html中class属性中第一个classname进行检验，
+ 上面筛选中class="hey col-md-4"将不会被选中 */
+ 
+[class^="col-"], [class*=" col-"]{
+	float: left;
+	box-sizing: border-box;
+	padding: 10px;
+}
+/* .row {
+	padding: 10px;
+} */
+.row::after {
+	content: ' ';
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
+[class^="col-"] > div, [class*=" col-"] > div {
+	background-color: #eee;
+	height: 50px;
+	width: 100%;
+}
+/* [class^="col-"]:nth-of-type(1),
+[class*=" col-"]:nth-of-type(1) {
+	margin-left: -20px;
+} */
+			/* 窗口宽度大于768像素 */
+			/* 当窗口宽度大于768px时以下样式才会起作用 */
+@media screen and (min-width: 768px) {
+			/* col-lg-n */
+	.col-lg-1 {width: 8.33333%;}
+	.col-lg-2 {width: 16.66667%;}
+	.col-lg-3 {width: 25.00000%;}
+	.col-lg-4 {width: 33.33333%;}
+	.col-lg-5 {width: 41.66667%;}
+	.col-lg-6 {width: 50.00000%;}
+	.col-lg-7 {width: 58.33333%;}
+	.col-lg-8 {width: 66.66667%;}
+	.col-lg-9 {width: 75.00000%;}
+	.col-lg-10 {width: 83.33333%;}
+	.col-lg-11 {width: 91.66667%;}
+	.col-lg-12 {width: 100.00000%;}
+}
+
+@media screen and (max-width: 768px) {
+			/* col-md-n */
+	.col-md-1 {width: 8.33333%;}
+	.col-md-2 {width: 16.66667%;}
+	.col-md-3 {width: 25.00000%;}
+	.col-md-4 {width: 33.33333%;}
+	.col-md-5 {width: 41.66667%;}
+	.col-md-6 {width: 50.00000%;}
+	.col-md-7 {width: 58.33333%;}
+	.col-md-8 {width: 66.66667%;}
+	.col-md-9 {width: 75.00000%;}
+	.col-md-10 {width: 83.33333%;}
+	.col-md-11 {width: 91.66667%;}
+	.col-md-12 {width: 100.00000%;}
+}
