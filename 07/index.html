@@ -33,7 +33,7 @@
 				<div class="picbox">
 					<h2>Time of New Life</h2>
 					<p>新时代，年轻的人们让我们一起<br/>体验新生活，享受新生活</p>
-					<button class="ele-link"><a href="#11"></a>开始体验</button>
+					<div class="ele-link button"><a href="#11"></a>开始体验</div>
 				</div>
 			</div>
 
@@ -73,29 +73,63 @@
 					<div >
 						<div id="coun">
 							<i class="iconfont icon-unfold"></i>
-							<input type="text" name="country" placeholder="中国">
-							
+							<label for="country">中国</label>
+							<div class="dropdown" id="country">
+								<ul>
+									<li>
+										<input type="radio" name="country" value="a">
+										<span>中国</span>
+									</li>
+									<li>
+										<input type="radio" name="country" value="b">
+										<span>日本</span>
+									</li>
+									<li>
+										<input type="radio" name="country" value="b">
+										<span>韩国</span>
+									</li>
+								</ul>
+							</div>
 						</div><!-- 
 					 --><div id="prov" class="selecting">
 							<i class="iconfont icon-unfold"></i>
-							<input type="text" class="selecting" name="province" placeholder="省份">
-							<div class="dropdown">
+							<label for="province">省份</label>
+							<div class="dropdown" id="province">
 								<ul>
-									<li class="current">北京市</li>
-									<li>天津市</li>
-									<li>河北省</li>
-									<li>陕西省</li>
-									<li>内蒙古自治区</li>
-									<li>辽宁省</li>
+									<li class="current">
+										<input type="radio" name="province" value="1">
+										<span>北京市</span>
+									</li>
+									<li class="">
+										<input type="radio" name="province" value="2">
+										<span>天津市</span>
+									</li>
+									<li class="">
+										<input type="radio" name="province" value="3">
+										<span>河北市</span>
+									</li>
+									<li class="">
+										<input type="radio" name="province" value="4">
+										<span>陕西省</span>
+									</li>
+									<li class="">
+										<input type="radio" name="province" value="5">
+										<span>内蒙古自治区</span>
+									</li>
+									<li class="">
+										<input type="radio" name="province" value="6">
+										<span>辽宁省</span>
+									</li>
+									
 								</ul>
 							</div>
 						</div><!--
 					 --><div id="city">
 							<i class="iconfont icon-unfold"></i>
-							<input type="text" name="city" placeholder="城市">
+							<label for="province">城市</label>
 						</div><!--
 					 --><div id="srh">
-							<button class="srh ele-link"><a href="#12"></a>搜索</button>
+							<div class="srh ele-link button"><a href="#12"></a>搜索</div>
 						</div>
 					</div>
 				</div>
@@ -163,7 +197,7 @@
 								</li>
 							</ul>
 						</div>
-						<button class="ele-link"><a href="#10"></a>更多详情</button>
+						<div class="ele-link button"><a href="#10"></a>更多详情</div>
 						<ul class="page-icon">
 							<li class="current"><a href="#text-1"></a></li>
 							<li><a href="#text-2"></a></li>
@@ -177,14 +211,14 @@
 							新时代<br>
 							关于爱生活的我们
 						</p>
-						<button class="ele-link"><a href="#12"></a>查看更多</button>
+						<div class="ele-link button"><a href="#12"></a>查看更多</div>
 					</div>
 					<div class="one-three btm-2">
 						<p class="underl">
 							新时代<br>
 							关于爱生活的我们
 						</p>
-						<button class="ele-link"><a href="#13"></a>查看更多</button>
+						<div class="ele-link button"><a href="#13"></a>查看更多</div>
 					</div>
 					<div class="one-three btm-3"></div>
 				</div>

@@ -80,6 +80,7 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	left: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 2;
 }
 
 
@@ -177,7 +178,7 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	font-size: 21px;
 	line-height: 32px;
 }
-#sect-a > .picbox > button {
+#sect-a > .picbox > .button {
 	color: #fff;
 	width: 331px;
 	font-size: 30px;
@@ -322,18 +323,25 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	color: #fff;
 	box-sizing: border-box;
 }
-.desc > div  input {
+.desc > div  label {
 	height: 36px;
 	line-height: 36px;
 	width: 235px;
 	padding: 0 8px;
-}
-.desc > div  input::placeholder {
+	background-color: #fff;
+	color: #a8aaaa;
+	display: inline-block;
+	text-align: left;
+	box-sizing: border-box;
 	font-family: 'Microsoft YaHei', 'sans-serif';
 	font-size: 12px;
 	color: #a8aaaa;
 }
+
 			/* input的下拉框 */
+.desc > div > div > .dropdown {
+	display: none;
+}
 .desc > div > div[class*='selecting'] {
 	border: 1px solid #be4e48;
 }
@@ -342,6 +350,7 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	width: 100%;
 	background-color: #e3e3e4;
 	overflow: auto;
+	display: block;
 }
 .desc > div > div[class*='selecting'] > .dropdown li {
 	height: 26px;
@@ -349,6 +358,15 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	text-align: left;
 	color: rgba(50, 51, 51, .7);	
 	cursor: default;
+	position: relative;
+}
+.desc > div > div[class*='selecting'] > .dropdown li > input {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
 }
 .desc > div > div[class*='selecting'] > .dropdown li::before {
 	font-family: "iconfont";
@@ -359,14 +377,14 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	padding: 0 6px;
 	visibility: hidden;
 }
-.desc > div > div[class*='selecting'] > .dropdown li.current {
+.desc > div > div[class*='selecting'] > .dropdown li:hover {
 	background-color: #be4e48;
 	color: #fff;
 }
-.desc > div > div[class*='selecting'] > .dropdown li.current::before {
+.desc > div > div[class*='selecting'] > .dropdown li:hover::before {
 	visibility: visible;
 }
-.desc > div  button {
+.desc > div  .button {
 	color: #fff;
 	width: 235px;
 	line-height: 36px;
@@ -531,11 +549,12 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	text-align: left;
 }
 			/* 按钮 */
-#sect-f > .top > .top-2 > button {
+#sect-f > .top > .top-2 > .button {
 	display: block;
-	padding: 0 25px;
+	width: 106px;
 	background-color: #fff;
-	height: 36px;
+	height: 31px;
+	line-height: 31px;
 	border: #e25c60 1px solid;
 	color: #e25c60;
 	margin: 40px auto 20px auto;
@@ -583,7 +602,7 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	padding-top: 170px;
 	box-sizing: border-box;
 }
-#sect-f > .bottom > div > button {
+#sect-f > .bottom > div > .button {
 	height: 42px;
 	width: 170px;
 	border: 1px solid #fff;
@@ -592,6 +611,8 @@ a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 	font-size: 21px;
 	color: #fff;
 	margin-top: 4px;
+	display: inline-block;
+	line-height: 42px;
 }
 #sect-f > .bottom > .btm-1 {
 	background-color: #e74f4d;
