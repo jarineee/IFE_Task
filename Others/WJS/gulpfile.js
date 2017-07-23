@@ -60,7 +60,6 @@ gulp.task('dist', function () {
 		.pipe(revAppend())
 		.pipe(gulp.dest('./dist/styles'));
 	gulp.src('./libraries/**/*.*')
-		.pipe(revAppend())
 		.pipe(gulp.dest('./dist/libraries'));
 	gulp.src('./scripts/*.*')
 		.pipe(revAppend())

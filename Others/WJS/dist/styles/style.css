@@ -14,10 +14,10 @@ a:hover {
 			/* 公共类开始 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('./../fonts/weijinsuo/Mifie-Web-Font.eot') format('embedded-opentype'); /* IE */
-	src: url('./../fonts/weijinsuo/MiFie-Web-Font.svg') format('svg'), 
-		 url('./../fonts/weijinsuo/MiFie-Web-Font.ttf') format('truetype'),
-		 url('./../fonts/weijinsuo/MiFie-Web-Font.woff') format('woff');
+	src: url('./../fonts/Mifie-Web-Font.eot') format('embedded-opentype'); /* IE */
+	src: url('./../fonts/MiFie-Web-Font.svg') format('svg'), 
+		 url('./../fonts/MiFie-Web-Font.ttf') format('truetype'),
+		 url('./../fonts/MiFie-Web-Font.woff') format('woff');
 }
 [class^='icon-'], [class*=' icon-'] {font-family: 'iconfont'; font-style: normal;}
 .icon-mobile::before{content:"\e908";}
@@ -474,7 +474,7 @@ fieldset[disabled] .navbar-wjs .btn-link:focus {
 	left:0;
 	margin-left: 15px;
 	display: none;
-	z-index: 2;
+	z-index: 4;
 }
 #header > .container > .row > li:first-child:hover > img {display: inline-block}
 #header > .container > .row > li+li {
