@@ -1,6 +1,6 @@
 ﻿# IFE_Task
 ## Index( HTML与CSS )
----
+
 ##### 任务一：零基础HTML编码 [demo](https://jarineee.github.io/IFE_Task/01/)
 ##### 任务二：零基础HTML及CSS编码（一 & 二）  [demo](https://jarineee.github.io/IFE_Task/02&5/)
 ##### 任务三：三栏式布局  [demo](https://jarineee.github.io/IFE_Task/03/)
@@ -12,10 +12,10 @@
 ##### 任务九：使用HTML/CSS实现一个复杂页面  [demo](https://jarineee.github.io/IFE_Task/09/)
 
 ## Index(Others)
----
-####todoMVC
+
+#### todoMVC
 - 原地址 [todoMVC](https://github.com/tastejs/todomvc-app-template)
 - [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/inAngularJS/dist)  <br/> 描述： angularjs框架。出现了bug！将于近日修复……
 
-####微金所
+#### 微金所
 - [demo](https://jarineee.github.io/IFE_Task/Others/WJS/dist/)<br/>描述： bootstrap框架
