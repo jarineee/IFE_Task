@@ -1,0 +1,20 @@
+{
+  "name": "weijinsuo",
+  "description": "learning how to build a website by gulp and bower",
+  "main": "gulpfile.js",
+  "authors": [
+    "jarineee <vicye_Lyu@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jarineee/IFE_Task",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

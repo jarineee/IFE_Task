@@ -1,0 +1,19 @@
+{
+  "name": "weijinsuo",
+  "version": "1.0.0",
+  "description": "learning how to build a website by gulp and bower",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-rev-append": "^0.1.8"
+  }
+}
