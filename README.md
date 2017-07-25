@@ -16,6 +16,7 @@
 #### todoMVC
 - 原地址 [todoMVC](https://github.com/tastejs/todomvc-app-template)
 - [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/AngularJS/dist)  <br/> 描述： angularjs框架。出现了bug！将于近日修复……
+- [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/DOM/dist)  <br/>描述：原味DOM
 
 #### 微金所
 - [demo](https://jarineee.github.io/IFE_Task/Others/WJS/dist/)<br/>描述： bootstrap框架
