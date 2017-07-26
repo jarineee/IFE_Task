@@ -86,10 +86,18 @@
 				for (i = 0; i < max; i += 1) {
 					list.removeChild(result[i]);
 				}
+				clrcompl.style.display = 'none';
 				hasItem();
 				allCompleted();
+				
 			};
 			myEventHandler(clrcompl, 'click', clearCompleted);
+
+			// 隐藏clear completed 按钮
+			var clrcompl_display = function () {
+				classOperator().hasClass('completed')[0] ? clrcompl.style.display = 'block' :
+				clrcompl.style.display = 'none'; 
+			}
 
 			//为全选全不选checkbox，添加事件监视  --全局方法 执行一次即可
 			var toggleAll = function () {
@@ -107,6 +115,7 @@
 						listbox[i].getElementsByTagName('input')[0].checked = false;
 					}
 				}
+				clrcompl_display();
 			}
 			myEventHandler(toggle_all, 'click', toggleAll);
 
@@ -156,7 +165,7 @@
 						var c_str = list_item.className,
 							index = c_str.indexOf(classname);
 						if (index === -1) {
-							c_str ? c_str = classname : c_str += ' ' + classname;
+							c_str === '' ? c_str = classname : c_str += ' ' + classname;
 						}
 						list_item.className = c_str;
 					} else {
@@ -164,7 +173,7 @@
 							var c_str = list_item[i].className,
 							index = c_str.indexOf(classname);
 							if (index === -1) {
-								c_str ? c_str = classname : c_str += ' ' + classname;
+								c_str === '' ? c_str = classname : c_str += ' ' + classname;
 							}
 						list_item[i].className = c_str;
 						}
@@ -209,6 +218,7 @@
 						classOperator(item).removeClass('completed');
 					}
 					allCompleted();
+					clrcompl_display();
 				};
 				myEventHandler(check, 'click', function () {
 						completed_checked(item);
@@ -234,10 +244,16 @@
 					}
 
 					function removeEditing (e) {
-						var target_elem = e.target || e.srcElement;
+						var e = e || window.event,
+							key = e.keyCode || e.which || e.charCode,
+							target_elem = e.target || e.srcElement;
 						if (target_elem !== current_input || e.keyCode == 13) {
-							current_label.innerHTML = current_input.value;
-							classOperator(that).removeClass('editing');
+							if(current_input.value !== '') {
+								current_label.innerHTML = current_input.value;
+								classOperator(that).removeClass('editing');
+							} else {
+								return false;
+							}
 						}
 					}
 				};
@@ -245,6 +261,7 @@
 				//删除按钮绑定 --需要绑定到li
 				var destroy = function () {
 					item.parentNode.removeChild(item);
+					clrcompl_display();
 					hasItem();
 					allCompleted();
 				};
@@ -291,8 +308,10 @@
 			};
 
 			myEventHandler(input_area, 'keypress', function (e) {
-				if (e.keyCode == 13) {
-				appendNew(input_area.value);
+				var e = e || window.event,
+					key = e.keyCode || e.which || e.charCode;
+				if (key == 13) {
+					appendNew(input_area.value);
 				}
 			});
 		}();
