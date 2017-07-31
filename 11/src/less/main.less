@@ -1,0 +1,265 @@
+@charset"utf-8";
+/*初始化样式*/ 
+@import "reset";
+/*公共样式*/
+@font-face {
+	font-family: "iconfont";
+	src: url('../fonts/iconfont.eot?t=1500269472961'); /* IE9*/
+	src: url('../fonts/iconfont.eot?t=1500269472961#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  		 url('../fonts/iconfont.woff?t=1500269472961') format('woff'), /* chrome, firefox */
+  		 url('../fonts/iconfont.ttf?t=1500269472961') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  		 url('../fonts/iconfont.svg?t=1500269472961#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family:"iconfont" !important;
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+.icon-left::before { content: "\e60a"; }
+
+.a-link {
+	position: relative;
+	a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+}
+/*页面样式*/
+@basic_c: #91d4da;
+.w {
+	width: 1000px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;  //默认rem是16px，62.5为10px;
+	font-family: 'Microsoft YaHei', 'SimHei', 'sans-serif';
+}
+body {
+	background-color: #f5f5f5;
+	padding-bottom: 135px;
+}
+/*header样式*/
+
+header {
+	min-width: 1000px;
+	color: #fff;
+	height: 114px;
+	line-height: 114px;
+	font-size: 4.2rem;
+	background-color: @basic_c;
+	position: relative;
+	width: 100%;
+	.back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0 30px;
+	}
+	h1{
+		text-align: center;
+	}
+}
+/*nav样式*/
+nav {
+	min-width: 1000px;
+	background-color: #fff;
+	color: #646464;
+	font-size: 38px;
+	font-size: 3.8rem;
+	ul {
+		display: flex;
+		flex-items: center;
+		height: 116px;
+		line-height: 116px;
+	}
+	li {
+		flex-grow: 1;
+		text-align: center;
+		a {
+			box-sizing: border-box;
+		}
+		a:hover, a:focus{
+			border-bottom: @basic_c solid 8px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}
+/*section-1样式*/
+.section-1 {
+	.w;
+	background-color: #fff;
+	img {
+		width: 100%;
+	}
+}
+
+/*section-2样式*/
+@border_c: #dedede;
+.section-2 {
+	.w;
+	padding: 0 30px;
+	background-color: #fff;
+	ul {
+		padding: 45px 0;
+		display: flex;
+		justify-content: space-around;
+		align-content: stretch;
+		border-bottom: 3px solid @border_c;
+	}
+	li {
+		height: 206px;
+		max-width: 122px;
+		text-align: center;
+	}
+	.tag {
+		margin-bottom: 42px;
+		img {
+			width: 100%;
+		}
+	}
+	span {
+		font-size: 32px;
+		font-size: 3.2rem;
+		line-height: 3.2rem;
+		font-weight: 400;
+	}
+}
+/*section-3样式*/
+.section-3 {
+	.w;
+	background-color: #fff;
+	ul {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		height: 420px;
+
+	}
+	.corner {
+		flex-basis: 1/3*100%;
+		padding-top: 20px;
+		height: 340px;
+		box-sizing: border-box;
+	}
+	.corner:nth-of-type(n+2) {
+		border-left: 3px solid @border_c;
+	}
+	.cover {
+		height: 182px;
+	}
+	h2 {
+		font-size: 4.2rem;
+		line-height: 78px;
+		color: #303030;
+	}
+	h3 {
+		font-size: 3.2rem;
+		line-height: 60px;
+		color: #5c5c5c;
+	}
+	
+}
+/*模块样式*/
+
+.tmpl {
+	.w;
+	padding: 0 30px;
+	background-color: #fff;
+	margin-top: 35px;
+	h2 {
+		line-height: 120px;
+		font-size: 4.5rem;
+		color: #646464;
+		border-bottom: 3px solid @border_c;
+		height: 120px;
+		box-sizing: border-box;
+		margin-bottom: 40px;
+	}
+	.part {
+		overflow: hidden;
+		padding-bottom: 25px;
+
+	}
+	.cover {
+		float: left;
+		border: 2px solid #feb832;
+		font-size: 0;
+		img {
+		}
+	}
+	.titlebox {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		height: 227px;
+		justify-content: space-between;
+		div {
+			padding-left: 25px;
+			flex-basis: 50%;
+			box-sizing: border-box;
+		}
+		h3{
+			line-height: 100px;
+			font-size: 3.2rem;
+			text-align: center;
+			background-color: #f8f8f8;
+		}
+
+	}
+
+}
+/*文章列表样式*/
+.articles {
+	.w;
+	background-color: #fff;
+	margin-top: 35px;
+	article {
+		overflow: hidden;
+		padding: 20px 30px;
+	}
+	article+article {
+		border-top: 3px solid @border_c;
+	}
+	
+	h3 {
+		font-size: 4.2rem;
+	}
+	footer {
+		color: #ccc;
+		font-size: 3.5rem;
+	}
+	.sgl-tmpl-pic {
+		float: left;
+		margin-right: 30px;
+		font-size: 0;
+	}
+	.sgl-tmpl-main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 200px;
+	}
+	.mtp-tmpl-pic {
+		display: flex;
+		font-size: 0;
+		padding: 20px 0;
+		.picbox {
+			flex-grow: 1;
+			padding-right: 5px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.mtp-tmpl-main {
+		float: left;
+	}
+}
