@@ -10,6 +10,8 @@
 ##### 任务七：实现常见的技术产品官网的页面架构及样式布局 [demo](https://jarineee.github.io/IFE_Task/07/)
 ##### 任务八：响应式网格（栅格化）布局  [demo](https://jarineee.github.io/IFE_Task/08/)
 ##### 任务九：使用HTML/CSS实现一个复杂页面  [demo](https://jarineee.github.io/IFE_Task/09/)
+##### 任务十： Flexbox 布局练习  [demo](https://jarineee.github.io/IFE_Task/10/)
+##### 任务十一： 移动Web页面布局实践  [demo](https://jarineee.github.io/IFE_Task/11/dist/)
 
 ## Index(Others)
 
@@ -17,7 +19,7 @@
 - 原地址 [todoMVC](https://github.com/tastejs/todomvc-app-template)
 -  *…… 施工中 ……* [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/AngularJS/dist)  <br/> 描述： angularjs框架。
 - [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/DOM/dist)  <br/>描述：原味DOM
-- [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/jQuery/dist) <br/> 描述： jquery框架
+- [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/jQuery/dist) <br/> 描述： jQuery框架
 
 #### 微金所
 - [demo](https://jarineee.github.io/IFE_Task/Others/WJS/dist/)<br/>描述： bootstrap框架
