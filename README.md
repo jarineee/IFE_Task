@@ -26,4 +26,4 @@
 
 #### 仿外卖app
 - [demo](https://jarineee.github.io/IFE_Task/Others/E-takeout/dist/)<br/>描述：Vuejs框架(vue-cli搭建，含vuex, vue-router)
-- 手机上观看效果更佳，扫一扫：![二维码](./others-Etakeout.png)
+- 手机上观看效果更佳，扫一扫：![QR Code here](https://jarineee.github.io/IFE_Task/others-Etakeout.png)
