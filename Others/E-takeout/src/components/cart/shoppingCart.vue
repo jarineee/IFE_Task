@@ -118,7 +118,7 @@
         let count = this.BALLDISPLAY.length
         while (count--) {
           let shell = this.BALLDISPLAY[count]
-          if (shell.show && shell.target.offsetHeight !== 0) {
+          if (shell.show && shell.target.clientWidth !== 0) {
             let rect = shell.target.getBoundingClientRect()
             let left = rect.left
             let top = rect.top
@@ -132,7 +132,7 @@
         }
       },
       enter (el) {
-        let wHeight = window.screen.height
+        let wHeight = document.body.offsetHeight
         let inner = el.children[0]
         let top = wHeight - 42
         let left = 28
