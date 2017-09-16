@@ -23,3 +23,4 @@
 
 #### 微金所
 - [demo](https://jarineee.github.io/IFE_Task/Others/WJS/dist/)<br/>描述： bootstrap框架
+- [demo](https://jarineee.github.io/IFE_Task/Others/E-takeout/dist/)<br/>描述：Vuejs框架(vue-cli搭建，含vuex, vue-router)
