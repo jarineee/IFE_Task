@@ -11,6 +11,7 @@
 - 原地址 [todoMVC](https://github.com/tastejs/todomvc-app-template)
 - [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/DOM/dist)  <br/>描述：原味DOM
 - [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/jQuery/dist) <br/> 描述： jQuery框架
+- [demo](https://jarineee.github.io/IFE_Task/Others/todoMVC/VueJS) <br/> 描述： VueJS框架
 
 #### 微金所（仅布局）
 - [demo](https://jarineee.github.io/IFE_Task/Others/WJS/dist/)<br/>描述： bootstrap框架
