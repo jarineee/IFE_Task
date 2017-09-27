@@ -1,0 +1,19 @@
+/*
+
+app-template.css overrides
+
+remove this comment if used
+remove this file if not
+
+*/
+.list-item {
+	transition: .3s transform ease-in, .3s opacity ease-in;
+	background: #fff;
+}
+li.list-leave-to, li.list-enter {
+	opacity: 0;
+	transform: translateX(-100%);
+}
+li.list-leave-active {
+	position: absolute;
+}
