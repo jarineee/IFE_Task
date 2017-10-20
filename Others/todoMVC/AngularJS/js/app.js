@@ -120,6 +120,7 @@
 				$scope.todoshow[i].completed = check;
 			}
 			check = !check;
+			return check
 		}
 
 	}])
